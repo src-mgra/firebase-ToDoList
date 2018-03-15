@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Firebase ToDoList
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col col-9>
+      <ion-item>
+         <ion-input type="text" [(ngModel)]="newItem" placeholder="New ToDoList item"></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <button ion-button (click)="addItem()">Add</button>
+    </ion-col>
+  </ion-row>
+  <ion-list>
+    <ion-item-sliding *ngFor="let item of ToDoListItems | async">
+      <ion-item>
+        {{item.id}} / {{item.name}} / {{item.status}}
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger" icon-only (click)="removeItem(item.id)">
+          <ion-icon name="trash"></ion-icon>
+        </button>
+      </ion-item-options>
+
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

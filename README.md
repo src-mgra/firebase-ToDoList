@@ -1,5 +1,13 @@
 firebase example implemented in ionic-app
 
+Install:
+
+ npm install firebase angularfire2
+ 
+Setup a firebase-project:
+
+https://firebase.google.com/docs/web/setup
+
 
 Shows CRUD-operations.
 

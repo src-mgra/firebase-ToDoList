@@ -4,7 +4,7 @@
 
  npm install firebase angularfire2
  
-Setup a firebase-project:
+## Setup a firebase-project:
 
 https://firebase.google.com/docs/web/setup
 

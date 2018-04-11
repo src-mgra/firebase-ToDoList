@@ -1,6 +1,6 @@
-firebase example implemented in ionic-app
+# firebase example implemented in ionic-app
 
-Install:
+## Install:
 
  npm install firebase angularfire2
  
